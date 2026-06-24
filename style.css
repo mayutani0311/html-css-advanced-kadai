@@ -1,5 +1,13 @@
 /* PC、スマホ共通スタイル */
 
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 15px;
+}
+
 body {
   max-width: 1080px;
   margin: 0 auto 0 auto;
@@ -43,13 +51,7 @@ header {
   display: none;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-p {
-  font-size: 15px;
-}
+/* メインビジュアル */
 
 #main-visual {
   position: relative;
@@ -58,7 +60,7 @@ p {
 
 #main-message {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   background-color: #2710d5;
   color: #ffffff;
@@ -69,7 +71,7 @@ p {
   z-index: 11;
 }
 
-#main-message > h1 {
+#main-message h1 {
   font-size: 60px;
   margin: 100px 0 0 50px;
 }
@@ -90,7 +92,7 @@ p {
 
 /* 見出し */
 h2 {
-  margin: 40pt 0 0 0;
+  margin: 40px 0 0 0;
 }
 
 h2::after {
@@ -104,7 +106,7 @@ h3 {
 
 /* ミッション */
 #mission {
-  margin: 80px auto;
+  margin: 80px auto 80px auto;
 }
 
 #mission-flex {
@@ -116,20 +118,20 @@ h3 {
   margin: 20px;
 }
 
-#mission photo {
+#mission-photo {
   width: 100%;
 }
 
 #s2dgs {
   margin-top: 50px;
-  width: 100&;
+  width: 100%;
 }
 
 /* プロダクト */
 #product {
   background-color: #fafafa;
   margin: 80px 0 80px 0;
-  padding: 10px 40px 0 40px;
+  padding: 10px 40px 0px 40px;
 }
 
 /* 外枠 */
@@ -151,7 +153,7 @@ h3 {
   margin-top: 80px;
 }
 
-/* 画像＋説明の枠 */
+/* 写真＋説明の枠 */
 #product-left > div {
   position: relative;
   height: 480px;
@@ -164,7 +166,7 @@ h3 {
   margin-left: 20px;
 }
 
-/* 画像 */
+/* 写真 */
 .product-photo {
   width: 100%;
 }
@@ -185,7 +187,7 @@ h3 {
   color: #2710d5;
   font-weight: bold;
   font-size: 16px;
-  margin: 0;
+  margin: 0px;
 }
 
 /* 説明文の見出し */
@@ -339,7 +341,7 @@ bottom: -42px;
 
 .cell {
   padding: 30px;
-  border-block-color: #ececec;
+  border-bottom-color: #ececec;
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
@@ -393,11 +395,11 @@ bottom: -42px;
   border-left: 0px;
   border-right: 0px;
   border-bottom-width: 1px;
-  border-block-color: #707070;
+  border-bottom-color: #707070;
   border-style: solid;
   background-color: #fafafa;
-  width: 400px;
   height: 56px;
+  width: 400px;
 }
 
 /* お問い合わせ内容のテキストエリア */
@@ -406,7 +408,7 @@ bottom: -42px;
   border-left: 0px;
   border-right: 0px;
   border-bottom-width: 1px;
-  border-block-color: #707070;
+  border-bottom-color: #707070;
   background-color: #fafafa;
   width: 400px;
   height: 200px;
@@ -476,7 +478,7 @@ footer {
 /* mission.html用スタイル */
 /* ミッションのメインビジュアル */
 .mission-main-inner {
-  background-image: url(images/mission/mission-main.png);
+  background-image: url("images/mission/mission-main.png");
   background-repeat: no-repeat;
   background-position-y: center;
 }
@@ -519,7 +521,7 @@ footer {
   font-size: 40px;
 }
 
-.misssion-h2::after {
+.mission-h2::after {
   content: none;
 }
 
@@ -898,7 +900,7 @@ footer {
     } 
 
     .tableheader {
-      height: 50px;
+      width: 50px;
     }
 
     .cell {
@@ -951,7 +953,7 @@ footer {
     #footer-link > a {
       margin: 0 20px 30px 0;
       display: block;
-      background-image: url(images/arrow.png);
+      background-image: url("images/arrow.png");
       background-repeat: no-repeat;
       background-position: right top;
     }
